@@ -1,0 +1,48 @@
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 992px) {}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 576px) {
+    header {
+        .menu {
+            display: none;
+        }
+        .title {
+            display: none;
+        }
+        .responsive-nav {
+            display: flex;
+        }
+        .responsive-menu {
+            z-index: 10;
+            display: block;
+        }
+        margin: 0;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        .logo {
+            flex-direction: column;
+            .site-title {
+                color: white;
+                text-align: center;
+            }
+        }
+    }
+    .back-container {
+        z-index: 0;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 10vh;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, .5);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .responsive-menu {
+        display: block;
+    }
+}
